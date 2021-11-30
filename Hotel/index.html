@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="site.css" />
+    <title>RESERVA HOTEL (MÓDULO 4)</title>
+  </head>
+  <body>
+    <div id="bigContainer">
+      <div class="container">
+        <label for="room-type">Tipo de habitación</label>
+        <select id="room-type">
+          <option value="">-- Selecciona --</option>
+          <option value="Standard">Standard</option>
+          <option value="Junior">Junior</option>
+          <option value="Suite">Suite</option>
+        </select>
+      </div>
+      <div class="container">
+        <label for="spa">Uso del Spa</label>
+        <input type="checkbox" id="spa" name="spaBox" />
+      </div>
+      <div class="container">
+        <label for="ocupation">Ocupación</label>
+        <select name="people" id="ocupation">
+          <option value="">--Por favor, elige una opción--</option>
+          <option value="Individual">Individual</option>
+          <option value="Doble">Doble</option>
+          <option value="Triple">triple</option>
+        </select>
+      </div>
+      <div class="container">
+        <label for="numberofnights">Indique el número de noches</label>
+        <input type="text" id="numberofnights" name="fname" />
+      </div>
+      <div class="container">
+        <label for="days-parking">Indique el número de días de parking:</label>
+        <input type="text" id="days-parking" name="fname" />
+      </div>
+      <div class="container">
+        <button id="mybutton">Calcula el precio</button>
+      </div>
+      <div class="container">
+        <h1 id="preciototal"></h1>
+      </div>
+    </div>
+    <div id="principal"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
